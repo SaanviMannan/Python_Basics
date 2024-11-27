@@ -1,0 +1,12 @@
+import math
+
+a = int(input('ENTER COEFF OF X2'))
+b = int(input('ENTER COEFF OF X'))
+c = int(input('ENTER COEFF OF CONST'))
+
+d = b**2 - (4 * a * c)
+
+sol1 = (-b + math.sqrt(d)) / (2*a)
+sol2 = (-b - math.sqrt(d)) / (2*a)
+
+print(f'SOL ARE {sol1} & {sol2}')
