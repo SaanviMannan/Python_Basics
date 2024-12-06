@@ -1,0 +1,46 @@
+def solve(n):
+    sum =0
+
+    while n>0:
+        rem=n%10
+        sum=sum+rem
+        n=n//10
+    return sum
+
+n = int(input('ENTER NUMBER : '))
+ans= solve(n)
+print(f"THE SUM IS:{ans} ")
+
+
+def solve(n):
+    ans =0
+
+    while n>0:
+        rem=n%10
+        ans=ans*10+rem
+        n=n//10
+    return ans
+
+n = int(input('ENTER NUMBER : '))
+sol= solve(n)
+print(f"THE SUM IS:{sol} ")
+
+
+
+def solve(n):
+    ans =0
+    n1=n
+
+    while n>0:
+        rem=n%10
+        ans=ans*10+rem
+        n=n//10
+
+    if n1 == ans:
+        return True
+    else:
+        return False
+
+n = int(input('ENTER NUMBER : '))
+sol= solve(n)
+print(sol)
